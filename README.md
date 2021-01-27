@@ -11,7 +11,8 @@
 **Clone the project and access the folder**
 
 ```bash
-$ git clone https://github.com/jandersonp/beeleads && cd gobarber-web
+$ git clone https://github.com/jandersonp/beeleads && cd beeleads
+
 ```
 
 **Follow the steps below**
