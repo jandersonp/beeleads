@@ -34,6 +34,7 @@
       "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
       "import/prefer-default-export": "off",
       "camelcase": "off",
+      "eslint(jsx-a11y/label-has-associated-control)": "off",
       "@typescript-eslint/ban-types": "off",
       "no-use-before-define": "off",
       "prettier/prettier": "error",
