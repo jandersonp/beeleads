@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-import sectionBanner from '../../assets/section-banner.png';
 import bannerFooter from '../../assets/banner-footer.png';
-import logoCarro from '../../assets/logo-carro.png';
 
 export const Container = styled.div`
-  width: 1920px;
-  /* height: 1325px; */
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Header = styled.div`
@@ -16,9 +14,10 @@ export const Header = styled.div`
   height: 90px;
   left: 772px;
   top: 0px;
+
+  background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 0px 0px 8px 8px;
-  background: #ffffff;
 
   img {
     margin-left: 48px;
@@ -27,84 +26,98 @@ export const Header = styled.div`
 `;
 
 export const Banner = styled.div`
-  position: absolute;
   width: 1920px;
-  height: 536px;
-  left: 388px;
-  top: 106px;
+  height: 682px;
+  left: 0px;
+  top: 0px;
 
-  background: url(${logoCarro}) no-repeat #546e7a;
-`;
+  background: #546e7a;
 
-export const Form = styled.div`
-  position: absolute;
-  width: 529px;
-  height: 536px;
-  left: 600px;
-
-  background: rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-
-  h1 {
-    margin: 24px;
-    font-size: 24px;
-    line-height: 28px;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+  img {
+    position: absolute;
+    width: 500px;
+    height: 452px;
+    left: 388px;
+    top: 148px;
   }
 
-  input {
-    flex: 1;
-    width: 481px;
-    height: 56px;
-    left: 988px;
-    top: 182px;
-    margin: 16px 24px;
-    padding: 18px 16px;
+  form {
+    position: absolute;
+    width: 529px;
+    height: 536px;
+    left: 964px;
+    top: 106px;
 
-    background: #ffffff;
-    border: 1px solid #cfd8dc;
-    box-sizing: border-box;
-    border-radius: 4px;
-  }
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 
-  button {
-    width: 481px;
-    height: 56px;
-    left: 988px;
-    top: 506px;
-    margin: 16px 24px;
-    padding: 18px 16px;
-    background: #ffca28;
-    border-radius: 4px;
-    transition: transform 0.2s;
+    h1 {
+      width: 481px;
+      height: 28px;
+      left: 988px;
+      top: 130px;
 
-    &:hover {
-      background: ${shade(0.2, '#ffca28')};
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+
+      color: #ffffff;
     }
-  }
 
-  p {
-    margin-left: 24px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
+    input {
+      flex: 1;
+      width: 481px;
+      height: 56px;
+      left: 988px;
+      top: 182px;
+      margin: 16px 24px;
+      padding: 18px 16px;
 
-    color: #ffffff;
+      background: #ffffff;
+      border: 1px solid #cfd8dc;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 481px;
+      height: 56px;
+      left: 988px;
+      top: 506px;
+      margin: 16px 24px;
+      padding: 18px 16px;
+      background: #ffca28;
+      border-radius: 4px;
+      transition: transform 0.2s;
+
+      &:hover {
+        background: ${shade(0.2, '#ffca28')};
+      }
+    }
+
+    p {
+      margin-left: 24px;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+
+      color: #ffffff;
+    }
   }
 `;
 
 export const Section = styled.div`
-  margin-top: 700px;
   width: 1920px;
-  height: 536px;
-  left: 388px;
-  top: 106px;
-  background: url(${sectionBanner}) no-repeat #00c1e3;
+  height: 499px;
+  left: 0px;
+  top: 1181px;
+  background-color: #00c1e3;
 
   img {
     position: absolute;
@@ -116,7 +129,6 @@ export const Section = styled.div`
 `;
 
 export const Footer = styled.div`
-  position: absolute;
   width: 1920px;
   height: 144px;
   left: 0px;
@@ -126,7 +138,23 @@ export const Footer = styled.div`
 
   img {
     position: absolute;
-    margin-top: 40px;
+    width: 103px;
+    height: 64px;
     left: 320px;
+    margin-top: 40px;
+  }
+
+  span {
+    width: 152px;
+    height: 32px;
+    left: 1448px;
+    top: 1200px;
+
+    img {
+      margin: 60px;
+      margin-left: 1400px;
+      width: 32px;
+      height: 32px;
+    }
   }
 `;
